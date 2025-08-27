@@ -4,21 +4,21 @@
 
 // Array de objetos con la ruta de la imagen y su texto alternativo (alt) para SEO.
 const portfolioImages = [
-    { path: "../img/foto1.jpg", alt: "Ventana de aluminio con rotura de puente térmico instalada en O Rosal" },
-    { path: "../img/foto2.jpg", alt: "Detalle de puerta de madera a medida en proyecto de carpintería" },
-    { path: "../img/foto3.jpg", alt: "Instalación de cerramiento de aluminio para terraza con triple acristalamiento" },
-    { path: "../img/foto4.jpg", alt: "Carpintero profesional midiendo e instalando una puerta de madera" },
-    { path: "../img/foto5.jpg", alt: "Ventana de PVC con alto aislamiento y vistas a la ría" },
-    { path: "../img/foto6.jpg", alt: "Puerta de entrada de madera maciza con cerradura de seguridad" },
-    { path: "../img/foto7.jpg", alt: "Cocina con muebles a medida de madera y encimera de cuarzo" },
-    { path: "../img/foto8.jpg", alt: "Puerta de interior de madera lacada en blanco y manilla moderna" },
-    { path: "../img/foto9.jpg", alt: "Instalación de una ventana de aluminio de gran tamaño con vidrio de seguridad" },
-    { path: "../img/foto10.jpg", alt: "Mueble de baño a medida de madera con lavabo integrado" },
-    { path: "../img/foto11.jpg", alt: "Revestimiento de pared de madera natural en salón moderno" },
-    { path: "../img/foto12.jpg", alt: "Puerta corredera de madera para ahorrar espacio en pasillo" },
-    { path: "../img/foto13.jpg", alt: "Ventana de madera de castaño con tratamiento exterior" },
-    { path: "../img/foto14.jpg", alt: "Ventanal de aluminio corredero que une el interior con el jardín" },
-    {path: "../img/foto15.jpg", alt: "Ventana triple en una esquina de una pared con vistas panorámicas" }
+    { path: "./img/foto1.jpg", alt: "Ventana de aluminio con rotura de puente térmico instalada en O Rosal" },
+    { path: "./img/foto2.jpg", alt: "Detalle de puerta de madera a medida en proyecto de carpintería" },
+    { path: "./img/foto3.jpg", alt: "Instalación de cerramiento de aluminio para terraza con triple acristalamiento" },
+    { path: "./img/foto4.jpg", alt: "Carpintero profesional midiendo e instalando una puerta de madera" },
+    { path: "./img/foto5.jpg", alt: "Ventana de PVC con alto aislamiento y vistas a la ría" },
+    { path: "./img/foto6.jpg", alt: "Puerta de entrada de madera maciza con cerradura de seguridad" },
+    { path: "./img/foto7.jpg", alt: "Cocina con muebles a medida de madera y encimera de cuarzo" },
+    { path: "./img/foto8.jpg", alt: "Puerta de interior de madera lacada en blanco y manilla moderna" },
+    { path: "./img/foto9.jpg", alt: "Instalación de una ventana de aluminio de gran tamaño con vidrio de seguridad" },
+    { path: "./img/foto10.jpg", alt: "Mueble de baño a medida de madera con lavabo integrado" },
+    { path: "./img/foto11.jpg", alt: "Revestimiento de pared de madera natural en salón moderno" },
+    { path: "./img/foto12.jpg", alt: "Puerta corredera de madera para ahorrar espacio en pasillo" },
+    { path: "./img/foto13.jpg", alt: "Ventana de madera de castaño con tratamiento exterior" },
+    { path: "./img/foto14.jpg", alt: "Ventanal de aluminio corredero que une el interior con el jardín" },
+    {path: "./img/foto15.jpg", alt: "Ventana triple en una esquina de una pared con vistas panorámicas" }
 ];
 
 // ==========================================
@@ -195,4 +195,5 @@ document.addEventListener('DOMContentLoaded', () => {
     generatePortfolioCards();
     startAutoRotate(); // Inicia la rotación automáticamente
     setupMobileMenu(); // Configura el menú de navegación móvil
+
 });
