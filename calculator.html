@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Calculadora de Ahorro Energético - Carpintegral</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">Carpintegral</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#about">Sobre Nosotros</a></li>
+                <li><a href="index.html#portfolio">Portafolio</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+                <li><a href="calculator.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator-section" style="padding-top: 150px; padding-bottom: 80px;">
+            <div class="container">
+                <h2 class="section-title">Calcula tu Ahorro Energético</h2>
+                <p style="text-align: center; margin-bottom: 3rem;">
+                    Descubre cuánto puedes ahorrar al año en tu factura de calefacción y aire acondicionado al instalar
+                    nuevas ventanas de alta eficiencia.
+                </p>
+
+                <div class="calculator-form contact-form">
+                    <div class="form-group">
+                        <label for="width">Ancho de la ventana (milímetros)</label>
+                        <input type="number" id="width" placeholder="Ej. 1500" min="100" step="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Alto de la ventana (milímetros)</label>
+                        <input type="number" id="height" placeholder="Ej. 1200" min="100" step="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="old-type">Tipo de ventana actual</label>
+                        <select id="old-type">
+                            <option value="single">Vidrio simple</option>
+                            <option value="old_double">Doble acristalamiento (antiguo)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-type">Tipo de ventana a instalar</label>
+                        <select id="new-type">
+                            <option value="double">Doble acristalamiento</option>
+                            <option value="triple">Triple acristalamiento</option>
+                        </select>
+                    </div>
+
+                    <button class="submit-btn" id="calculate-btn">Calcular Ahorro</button>
+
+                    <div id="result" style="margin-top: 2rem; text-align: center; font-size: 1.2rem;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="politica-privacidad.html">Privacidad</a>
+                <a href="aviso-legal.html">Términos</a>
+            </div>
+            <p>&copy; 2024 Carpintegral. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/calculator.js"></script>
+</body>
+
+</html>
