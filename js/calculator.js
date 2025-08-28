@@ -64,4 +64,31 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         });
     }
+    
+    // Aquí está el cambio clave: llama a la función para configurar el menú.
+    setupMobileMenu(); 
 });
+
+// ==========================================
+//  MENÚ DE NAVEGACIÓN MÓVIL
+// ==========================================
+
+function setupMobileMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) { // Comprueba que los elementos existen
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active'); // También añade la clase 'active' al botón para la "X"
+        });
+        
+        // Cierra el menú cuando se hace clic en un enlace
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active'); // Asegura que la "X" se revierta a hamburguesa
+            });
+        });
+    }
+}
